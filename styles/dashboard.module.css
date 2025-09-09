@@ -1,0 +1,111 @@
+.container {
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  text-align: center;
+  padding: 2rem 1rem 1rem;
+  background: rgba(255, 255, 255, 0.85);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: relative;
+}
+
+.logo {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin: 0 auto 0.5rem;
+  display: block;
+}
+
+.logoutBtn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: #e00;
+  border: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.logoutBtn:hover {
+  background: #a00;
+}
+
+.main {
+  flex: 1;
+  padding: 1rem 2rem;
+  background: rgba(255, 255, 255, 0.9);
+  margin: 1rem auto;
+  max-width: 900px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.bugForm {
+  margin-bottom: 2rem;
+}
+
+.bugForm form {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.bugForm input,
+.bugForm select {
+  flex: 1 1 200px;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.bugForm button {
+  padding: 0.75rem 1.5rem;
+  background: #0070f3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.bugForm button:hover {
+  background: #005bb5;
+}
+
+.bugHistory table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.bugHistory th,
+.bugHistory td {
+  border: 1px solid #ddd;
+  padding: 0.75rem;
+  text-align: left;
+}
+
+.bugHistory th {
+  background: #0070f3;
+  color: white;
+}
+
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.85);
+  font-size: 0.9rem;
+  color: #555;
+}
